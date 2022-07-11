@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="dea.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./all.css">
+  <script src="https://kit.fontawesome.com/fc56e59f9a.js" crossorigin="anonymous"></script>
+
+
+
+
+  <title>dealer</title>
+</head>
+
+<body>
+  <!-- preloader -->
+  <div id="preloader">
+    <img src="./preloader.gif" alt="preloader">
+  </div>
+  <!-- end of preloader -->
+
+  <header id="header">
+    <nav class="navbar ">
+      <div>
+        <a href="#header" class="navbar-brand">
+
+          <i class="fas fa-car"></i>
+        </a>
+      </div>
+      </div>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="toggle-icon ">
+          <i class="fas fa-bars fa-fw "></i>
+
+        </span>
+      </button>
+      <div class="collapse navbar-collapse " id="myNavbar">
+        <ul class="navbar-nav text-capitalize mx-auto nav-page">
+          <li class="nav-item my-3">
+            <a href="#header" class="nav-link active">home</a>
+          </li>
+          <li class="nav-item  my-3">
+            <a href="#inventory" class="nav-link ">inventory</a>
+          </li>
+          <li class="nav-item  my-3">
+            <a href="#about" class="nav-link">about us</a>
+          </li>
+          <li class="nav-item my-3 ">
+            <a href="#contact" class="nav-link">contact us</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+
+    <div class="contanir header-containr">
+      <div class="row exotic ">
+        <div class="col col-12">
+          <h2 class="text-capitalize header-title">
+            exotic car rental los angles
+          </h2>
+          <p class="sub-title text-capitalize">luxury and exotic cars on demand</p>
+          <div class="blue-line mx-auto my-5"></div>
+        </div>
+
+
+        <div class="col-4 col-md-3 col-lg-2 mt-5 mx-auto text-uppercase ">
+          <a href="#logo" class="explor-btn">
+            explor
+          </a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </header>
+  <!-- brand select section -->
+  <section id="logo" class="py-5">
+
+    <div class="section-title p-5">
+      <h5 class="small-title text-capitalize">
+        search by <span class="big-title my-3 ">brand</span>
+      </h5>
+      <div class="blue-small-line mx-auto"></div>
+    </div>
+    <div class="img-container d-flex justify-content-around">
+      <button class="btn btn-cont" data-filter="all">ALL</button>
+    </div>
+
+    <div class="container logo-container">
+      <div class="row my-0 mx-auto">
+        <div class="col col-4 col-md-3 col-lg-2 img-container ">
+
+          <img class="image" src="./rolls.png" alt="" data-filter="rolls-roys">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./mesrati.png" alt="" data-filter="maserati">
+
+        </div>
+        <div class="col col-4  col-lg-2 col-md-3 img-container">
+
+          <img class="image" src="./porch.png" alt="" data-filter="porcha">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./lambo.png" alt="" data-filter="lambo">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./ferrari.png" alt="" data-filter="ferrari">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./bmw.png" alt="" data-filter="bmw">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./benz.png" alt="" data-filter="Mercedes">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./tesla.png" alt="" data-filter="tesla">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./aston.png" alt="" data-filter="aston-martin">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./cadilac.png" alt="" data-filter="cadillac">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container ">
+
+          <img class="image" src="./mclar.png" alt="" data-filter="mclaren">
+
+        </div>
+        <div class="col col-4 col-md-3 col-lg-2 img-container">
+
+          <img class="image" src="./bently.png" alt="" data-filter="bentlly">
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--end of brand select section -->
+  <section id="inventory">
+    <div class="section-title p-5">
+      <h5 class="small-title text-capitalize text-light">
+        our <span class="big-title my-3 text-light ">inventory</span>
+      </h5>
+      <div class="blue-small-line mx-auto "></div>
+    </div>
+    <div class="container ">
+      <div class="row inventory-container">
+        <!-- single car -->
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="carousel slide" id="myslider" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./Ferrari 488 Spider-1.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Ferrari 488 Spider-2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Ferrari 488 Spider-3.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Ferrari 488 Spider-4.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Ferrari 488 Spider-5.jpg" class="card-img-top" alt="">
+                </div>
+              </div>
+              <a href="#myslider" class="left carousel-control-prev" role="button" data-slide="prev">
+
+                <i class="fas fa-chevron-circle-left fa-2x control-arrow"></i>
+
+              </a>
+              <a href="#myslider" class="left carousel-control-next" data-slide="next" role="button">
+
+                <i class="fas fa-chevron-circle-right fa-2x control-arrow"></i>
+
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="car-info d-flex justify-content-between">
+                <div class="car-make text-uppercase">
+                  <h4>ferrari</h4>
+                  <h6>488 spider</h6>
+                </div>
+                <div class="car-price align-self-center">$
+                  <span class="car-value ">2000</span> A Day
+                  <br>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- end of single car -->
+        <!-- single car -->
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="carousel slide" id="secslider" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./rr-1.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./rr-2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./rr-3.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./rr-4.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./rr-5.jpg" class="card-img-top" alt="">
+                </div>
+              </div>
+              <a href="#secslider" class="left carousel-control-prev" role="button" data-slide="prev">
+
+                <i class="fas fa-chevron-circle-left fa-2x control-arrow"></i>
+
+              </a>
+              <a href="#secslider" class="left carousel-control-next" data-slide="next" role="button">
+
+                <i class="fas fa-chevron-circle-right fa-2x control-arrow"></i>
+
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="car-info d-flex justify-content-between">
+                <div class="car-make text-uppercase">
+                  <h4>rolls roys</h4>
+                  <h6>phantom</h6>
+                </div>
+                <div class="car-price align-self-center">$
+                  <span class="car-value ">2000</span> A Day
+                  <br>
+
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+              <a href="#" class="request-btn">request to book</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of single car -->
+        <!-- single car -->
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="carousel slide" id="thirdslider" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./mcla-1.jpeg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./mcla-2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./mcla-3.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./mcla-4.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./mcla-5.jpg" class="card-img-top" alt="">
+                </div>
+              </div>
+              <a href="#thirdslider" class="left carousel-control-prev" role="button" data-slide="prev">
+
+                <i class="fas fa-chevron-circle-left fa-2x control-arrow"></i>
+
+              </a>
+              <a href="#thirdslider" class="left carousel-control-next" data-slide="next" role="button">
+
+                <i class="fas fa-chevron-circle-right fa-2x control-arrow"></i>
+
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="car-info d-flex justify-content-between">
+                <div class="car-make text-uppercase">
+                  <h4>mclaren</h4>
+                  <h6>720s</h6>
+                </div>
+                <div class="car-price align-self-center">$
+                  <span class="car-value ">2000</span> A Day
+                  <br>
+
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+              <a href="#" class="request-btn">request to book</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of single car -->
+        <!-- single car -->
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="carousel slide" id="fourslider" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./bent-1.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./bent-2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./bent-3.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./bent-4.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./bent-5.jpg" class="card-img-top" alt="">
+                </div>
+              </div>
+              <a href="#fourslider" class="left carousel-control-prev" role="button" data-slide="prev">
+
+                <i class="fas fa-chevron-circle-left fa-2x control-arrow"></i>
+
+              </a>
+              <a href="#fourslider" class="left carousel-control-next" data-slide="next" role="button">
+
+                <i class="fas fa-chevron-circle-right fa-2x control-arrow"></i>
+
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="car-info d-flex justify-content-between">
+                <div class="car-make text-uppercase">
+                  <h4>bently</h4>
+                  <h6>bugotn</h6>
+                </div>
+                <div class="car-price align-self-center">$
+                  <span class="car-value ">2000</span> A Day
+                  <br>
+
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+              <a href="#" class="request-btn">request to book</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of single car -->
+        <!-- single car -->
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="carousel slide" id="fiveslider" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./lambo-1.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../lambo-2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../lambo-3.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../lambo-4.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="../lambo-5.jpg" class="card-img-top" alt="">
+                </div>
+              </div>
+              <a href="#fiveslider" class="left carousel-control-prev" role="button" data-slide="prev">
+
+                <i class="fas fa-chevron-circle-left fa-2x control-arrow"></i>
+
+              </a>
+              <a href="#fiveslider" class="left carousel-control-next" data-slide="next" role="button">
+
+                <i class="fas fa-chevron-circle-right fa-2x control-arrow"></i>
+
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="car-info d-flex justify-content-between">
+                <div class="car-make text-uppercase">
+                  <h4>lamborgini</h4>
+                  <h6>huracin</h6>
+                </div>
+                <div class="car-price align-self-center">$
+                  <span class="car-value ">2000</span> A Day
+                  <br>
+
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+              <a href="#" class="request-btn">request to book</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of single car -->
+        <!-- single car -->
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="carousel slide" id="sixslider" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./porch-1.jpeg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./porch-2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./porch-3.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./porch-4.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./porch-5.jpg" class="card-img-top" alt="">
+                </div>
+              </div>
+              <a href="#sixslider" class="left carousel-control-prev" role="button" data-slide="prev">
+
+                <i class="fas fa-chevron-circle-left fa-2x control-arrow"></i>
+
+              </a>
+              <a href="#sixslider" class="left carousel-control-next" data-slide="next" role="button">
+
+                <i class="fas fa-chevron-circle-right fa-2x control-arrow"></i>
+
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="car-info d-flex justify-content-between">
+                <div class="car-make text-uppercase">
+                  <h4>porchea</h4>
+                  <h6>911 rt</h6>
+                </div>
+                <div class="car-price align-self-center">$
+                  <span class="car-value ">2000</span> A Day
+                  <br>
+
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+              <a href="#" class="request-btn">request to book</a>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of single car -->
+      </div>
+    </div>
+
+  </section>
+  <!-- review section -->
+
+  <section id="review">
+    <div class="container text-capitalize">
+      <div class="review-title pt-5 pb-3 text-light">
+        <h3>what our customers are saying</h3>
+      </div>
+      <div class="carousel slide review" id="carousle-review" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousle-review" class="carousel-li" data-slide-to="0" class="active"></li>
+          <li data-target="#carousle-review" class="carousel-li" data-slide-to="1"></li>
+          <li data-target="#carousle-review" class="carousel-li" data-slide-to="2"></li>
+          <li data-target="#carousle-review" class="carousel-li" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner review-text">
+          <div class="carousel-item review-item active ">
+            <q>
+              I called the rental servies at 9:00 am to inquire about the availabiltiy of my dream car, and the
+              Lamborghini was delivered to me at 11:00 am the same day.
+              The transaction was simple and smooth
+            </q>
+            <p class="reviewer text-capitalize">- shawn h.</p>
+          </div>
+          <div class="carousel-item review-item ">
+            <q>
+              This company is amazing. They had the exact Laborghini was needed and it was in perfect condition. The
+              company is very hospitsble
+              and the process is easy. They explaind everything with the car and did an extensive walk through
+            </q>
+            <p class="reviewer text-capitalize">- eugene s.</p>
+          </div>
+          <div class="carousel-item review-item ">
+            <q>
+              This company went the extra mile for our company-pun intended. They were very accommodating and
+              communication was efficient. We used the gorgeous Rolls Royce
+              dawn for our music video with great success
+
+            </q>
+            <p class="reviewer text-capitalize">- gianna c.</p>
+          </div>
+          <div class="carousel-item review-item ">
+            <q>
+              if you are looking for quality cars and a good service you can't go wrong here. the best car rental
+              service in beverly hills, no doubt 3rd
+              time renting from here, never disappointed
+            </q>
+            <p class="reviewer text-capitalize">- ryan m.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partners section -->
+  <section id="partners ">
+    <div class="section-title p-3">
+      <h5 class="small-title text-capitalize">
+        our <span class="big-title my-3 ">partners</span>
+      </h5>
+      <div class="blue-small-line mx-auto"></div>
+    </div>
+    <div class="row partners-row d-flex justify-content-around my-5 mx-3">
+      <div class="col-4 col-lg-3">
+        <img class="par-image" src="./part/partners.png" alt="">
+      </div>
+      <div class="col-4 col-lg-3">
+        <img class="par-image" src="./part/partners-1.png" alt="">
+      </div>
+      <div class="col-4 col-lg-3">
+        <img class="par-image" src="./part/partners-2.png" alt="">
+      </div>
+      <div class="col-4 col-lg-3">
+        <img class="par-image" src="./part/partners-3.png" alt="">
+      </div>
+      <div class="col-4 col-lg-3">
+        <img class="par-image" src="./part/partners-4.png" alt="">
+      </div>
+      <div class="col-4 col-lg-3">
+        <img class="par-image" src="./part/partners-5.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- about us section -->
+  <section id="about">
+    <div class="section-title p-3 pt-5">
+      <h5 class="small-title text-capitalize">
+        about <span class="big-title my-3 text-light ">us</span>
+      </h5>
+      <div class="blue-small-line mx-auto"></div>
+    </div>
+    <div class="container about-container">
+      <div class=" video-container">
+        <iframe width="560" height="315" class="video-cont" src="https://www.youtube.com/embed/NSw8hNtpSy0"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+        odio laboriosam, ex enim ipsum voluptatum reiciendis? Tempore commodi sapiente tempora
+        optio, temporibus vitae quas, numquam non eos officiis aspernatur cupiditate qui perferendis
+        explicabo earum suscipit saepe, quidem voluptates repellat<span id="dots">...</span> <span id="more">Lorem
+          ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam atque, autem ipsum commodi nostrum consequatur
+          quis inventore consectetur nemo numquam. Officiis obcaecati blanditiis minima sed voluptatem, aliquid odio
+          fugit odit quaerat deserunt inventore facere, reprehenderit placeat! Voluptatem dolor velit iste qui, rerum
+          soluta veritatis at deserunt dignissimos? Autem porro, maxime inventore libero rem a aliquam reiciendis quasi
+          earum ipsum, sapiente sit harum facere ut doloremque quae corrupti reprehenderit fugit mollitia saepe. Et
+          dolore quidem explicabo rem quae ratione reprehenderit voluptatibus quas blanditiis fuga possimus minus
+          molestias hic ullam laudantium modi veritatis repellat minima iste, natus odit corporis qui perspiciatis.
+          Facere repellendus nisi rem reprehenderit eius, sed harum cumque officiis facilis veritatis nulla amet neque
+          dolores suscipit quae iste ea dolorum distinctio eveniet vero totam animi. Rem voluptatum quos, incidunt
+          cumque eveniet atque, suscipit minus culpa aspernatur, necessitatibus officia. Facilis praesentium aspernatur
+          eveniet! Magnam dignissimos tenetur ut cumque officia quisquam deleniti. molestiae ea est dolores fugit rerum!
+          Obcaecati hic ratione ea ipsam laudantium aliquam itaque? Nostrum doloremque, vero assumenda itaque
+          qui nulla corrupti et quos repellendus delectus vel quae beatae ipsum eos dolorum facere doloribus
+          iure placeat obcaecati tempora ab corporis. Veritatis, velit! Cupiditate architecto,
+          labore quasi sequi distinctio dolorum? Corrupti excepturi alias iste incidunt praesentium
+          nisi ut beatae consequuntur explicabo quae.</span></p><span>
+        <button class="btn" id="read-btn" onclick="readmores()">read more <i
+            class="fa fa-angle-double-down"></i></button>
+      </span>
+    </div>
+  </section>
+  <!-- end of about us section -->
+  <!-- contact and address -->
+  <section id="contact">
+    <div class="container-fluid p-0">
+      <div class="row contact-row">
+        <div class="info-col col-12 col-lg-6">
+          <div class="contact-info-title text-capitalize">
+            <h3>company information</h3>
+          </div>
+          <div class="contact-info my-3">
+            <div class="phone">
+              <i class="fas fa-phone mr-3 info-icon"></i><span class="info-text">+1-310-887-7005</span>
+            </div>
+            <div class="email my-3">
+              <i class="fa fa-envelope info-icon mr-3"></i><span class="info-text">info@cardealer.com</span>
+
+            </div>
+            <div class="location my-3 d-flex align-items-start justify-contant-between">
+              <i class="  fa fa-map-marker info-icon mr-3"></i><span class="info-text">499 North Canon Drive
+                <br> Beverly Hills, CA 90210 </span>
+
+            </div>
+
+            <div class=" text-capitalize my-3 hours d-flex align-items-start justify-contant-between">
+              <i class="far fa-clock mr-3 info-icon"></i>
+              <span class="info-text">monday - friday<p class="hours-num">8am - 6pm </p>
+              </span>
+              <span class="ml-3 info-text">saturday - sunday<p class="hours-num">9am - 6am</p></span>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-0 m-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6609.8052775416745!2d-118.40257100000001!3d34.07201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc064c2760a9%3A0x83f94ce2f58cbe0a!2s499%20N%20Canon%20Dr%2C%20Beverly%20Hills%2C%20CA%2090210%2C%20USA!5e0!3m2!1sen!2sin!4v1593115721250!5m2!1sen!2sin"
+            width="650" class="map" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of contact and address -->
+
+  <!-- list and form section -->
+  <section id="cont-form">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="form-sec col-12 my-5 col-lg-5">
+          <div class="form-title  d-flex justify-content-between my-3 p-3">
+            <div class="f-title">
+              <h3>contact us with</h3>
+            </div>
+            <div class="align-self-center">
+
+              <i class="fab fa-facebook-f social-icon"></i>
+              <i class="fab fa-instagram social-icon"></i>
+              <i class="fab fa-linkedin social-icon"></i>
+              <i class="fab fa-youtube social-icon"></i>
+            </div>
+          </div>
+          <div class="form-container mt-3 text-capitalize">
+            <label for="f-name">first name:</label>
+
+            <input type="text" id="f-name" placeholder="First Name*">
+
+            <label for="email">email:</label>
+
+            <input type="email" id="email" placeholder="Email*">
+
+            <label for="phone">phone number:</label>
+
+            <input type="tel" id="phone" placeholder="Phone number">
+
+            <label for="subject">subject</label>
+
+            <input type="text" placeholder="Subject">
+
+            <label for="message">message</label>
+
+            <input type="text" placeholder="Your Message..." id="message">
+            <input type="submit" value="SEND" id="send-btn">
+          </div>
+        </div>
+        <div class="company col-6 col-lg-3">
+          <h5>Company</h5>
+          <ul class="ml-0">
+            <li><a href="#"> US</a></li>
+            <li><a href="#">faqs</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">long term exotic car rental</a></li>
+            <li><a href="#">wedding car rental</a></li>
+            <li><a href="#">prom car rental</a></li>
+            <li><a href="#">high end car rentals</a></li>
+            <li><a href="#">Rent an exotic car for the day</a></li>
+            <li><a href="#">site map</a></li>
+
+
+          </ul>
+        </div>
+        <div class="company col-6 col-lg-3">
+          <h5>Brands</h5>
+          <ul class="ml-0">
+            <li><a href="#">rolls-royce</a></li>
+            <li><a href="#">bentley</a></li>
+            <li><a href="#">aston martin</a></li>
+            <li><a href="#">lamborghini</a></li>
+            <li><a href="#">ferrari</a></li>
+            <li><a href="#">mcLaren</a></li>
+            <li><a href="#">porsche</a></li>
+            <li><a href="#">mercedes</a></li>
+            <li><a href="#">BMW</a></li>
+            <li><a href="#">range rover</a></li>
+            <li><a href="#">cadillac</a></li>
+            <li><a href="#">maserati</a></li>
+            <li><a href="#">corvette</a></li>
+            <li><a href="#">tesla</a></li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- end of list and form section -->
+
+
+
+  <!-- jquery -->
+  <script src="jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="bootstrap.min.js"></script>
+
+  <!-- script js -->
+  <script src="./dealer.js"></script>
+</body>
+
+</html>
