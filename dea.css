@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    
+    
 }
 body{
     font-family: 'Righteous', 'Times New Roman', Times, serif;
    overflow-x: hidden;
+   
+   
 }
 
 
@@ -67,11 +70,12 @@ body{
 }
 #header{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./fersnow.jpg);
-    min-height: 100vh;
+    height: 100vh;
     background-position: center;
    background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
+    
     
 }
 .explor-btn{
@@ -98,7 +102,7 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 5rem;
+    margin-top: 8rem;
     font-weight: 500;
     
 }
